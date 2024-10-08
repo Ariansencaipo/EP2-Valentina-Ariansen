@@ -1,0 +1,409 @@
+/* styles.css */
+*{
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #7aadcb;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 120px;
+    z-index: 999;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    margin: 0 10px;
+    
+}
+
+nav li a{
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-family: 'Bebas Neue';
+    font-size: 20px;
+    transition: all 0.3s ease;
+    border: 2px solid transparent;
+    width: 100px; /* Anchura fija */
+    height: 40px; /* Altura fija */
+    line-height: 40px; /* Para centrar verticalmente el texto */
+    text-align: center; /* Centra el texto horizontalmente */
+    border: 2px solid transparent; /* Añade los bordes */
+    display: inline-block;
+    border-radius: 15px;
+
+    
+}
+
+nav li a:hover{
+    color: #3a6486;
+    border: 2px solid  #3a6486;
+    
+    
+}
+
+
+.logo{
+    padding: 0 15px;
+}
+.logo img{
+    width: 95px;
+    height: auto;
+}
+
+.iconos {
+    display: flex;
+    
+}
+
+.iconos a {
+    margin: 0 10px;
+    color: #ffffff;
+    font-size: 18px;
+}
+.iconos a:hover {
+   
+    color:  #3a6486;
+    
+}
+
+
+/* aquì se implementan los estilos css para la seccion uno*/
+
+.principal {
+    background-image: url('../imagen/Fotomia1.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 500px; /* Ajusta la altura según tus necesidades */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contenidouno {
+    width: 100%;
+    height: 500px;
+    text-align: center;
+    color: #ffffff;
+    text-shadow: #3a6486;
+    padding: 2px;
+    background: rgba(0, 0, 0, 0.2);
+    
+}
+
+.contenidouno h1{
+    margin-top: 200px;
+    margin-bottom: 3px;
+    font-size: 40px;
+    font-family: "Bebas Neue";
+    color: #beb63d;
+    text-shadow: 
+    2px 2px 0px #ffffff,   
+    -2px 2px 0px #ffffff, 
+    2px -2px 0px #ffffff,  
+    -2px -2px 0px #ffffff;
+}
+
+.contenidouno h2{
+    margin-bottom: 10px;
+  font-size: 30px;
+  font-family: "Bebas Neue";
+  color: #2a5e81;
+  background-color: #f0f0f0; 
+  padding: 5px 10px; 
+  display: inline-block; 
+  border-radius: 5px; 
+}
+
+.contenidouno p{
+    margin-bottom: 40px;
+    font-family:"Merriweather";
+}
+
+.buttons {
+    display: flex;
+    justify-content:center;
+    margin-top: 50px;
+
+}
+
+.button {
+    background-color: #3a6486;
+    color: white;
+    font-family: "Bebas Neue";
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 25px;
+    font-size: 16px;
+    margin: 0 30px;
+}
+
+.button:hover {
+    background-color: #e7e18f;
+    color: #3a6486;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 25px;
+    font-size: 16px;
+    margin: 0 30px;
+}
+
+
+/*estilos para el contenido dos*/
+
+.banner {
+    background-image: url('../imagen/fondo03.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 300px; /* Ajusta la altura según tus necesidades */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contenidodos {
+    width: 100%;
+    height: 300px;
+    text-align: center;
+    color: #fff;
+    padding: 2px;
+    background-color: hwb(210 32% 32% / 0.5);
+}
+
+.contenidodos h2{
+    margin-top: 100px;
+    margin-bottom: 50px;
+    margin-bottom: 10px;
+  font-size: 35px;
+  font-family: "Bebas Neue";
+  color: #f0f0f0;
+  background-color:#beb63d ; 
+  padding: 5px 10px; 
+  display: inline-block; 
+  border-radius: 5px; 
+}
+
+
+.figuras {
+    display: flex;
+    justify-content: center;
+}
+
+.figuras a {
+    margin: 0 10px;
+    color: #faf7f7;
+    font-size: 22px;
+ 
+}
+.figuras a:hover {
+   
+    color: #d2c511;
+    
+}
+
+
+
+
+/*creando la seccion 03 del contenido de la pagina*/
+
+.galeria {
+    background-color: #cdc37f; 
+    padding: 50px 0;
+    border-radius: 5px;
+}
+
+.galeria h2 {
+    text-align: center;
+    font-size: 30px; 
+    margin-bottom: 10px; 
+    color: #194679; 
+    letter-spacing: 1.5px; 
+    font-family: 'Bebas Neue', "Merriweather"; 
+}
+
+.galeria p {
+    color: #ffffff; 
+    text-align: center;
+    font-size: 16px; 
+    line-height: 1.6; 
+    margin-bottom: 2px;
+    letter-spacing: 0.5px;
+    font-family: "Merriweather";
+}
+
+.contenidotres {
+    max-width: 1200px;
+    height: 100%; 
+    margin: 0 auto;
+    display: flex;
+    align-items: flex-start; 
+    justify-content: space-around;
+    flex-wrap: wrap; 
+}
+
+.contenidotres .columna {
+    flex: 1;
+    margin-top: 50px;
+    padding: 30px;
+    text-align: center;
+    max-width: 350px; 
+    padding-bottom: 50px;
+}
+
+.contenidotres .columna img {
+    max-width: 100%;
+    height: auto;
+    padding: 5px;
+    transition: transform 0.3s ease; 
+}
+
+.contenidotres .columna img:hover {
+    transform: scale(1.05); 
+}
+
+.contenidotres .columna p {
+    margin-top: 20px;
+    text-align: justify;
+    line-height: 1.6
+    font-size: 12px;
+    font-family: 'Merriweather', serif; 
+}
+
+.contenidotres .columna p1{
+    color: #0077b5;
+    margin-bottom:30 px;
+    text-align: center;
+    font-family: "Bebas Neue";
+    font-size: 12px;
+
+}
+
+.contenidotres .columna {
+    display: flex;
+    flex-direction: column; 
+    align-items: center;    
+}
+
+.contenidotres .columna a {
+    background-color: #3a6486;
+    color: white;
+    font-family: "Bebas Neue";
+    padding: 15px 32px;
+    text-align: center;
+    border-radius: 25px;
+    font-size: 14px;
+    margin: 10px 0; 
+    text-decoration: none;
+    display: inline-block; 
+}
+
+.contenidotres .columna a:hover {
+    background-color: #e7e18f;
+    color: #3a6486;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 25px;
+    font-size: 16px;
+    margin: 10px 0; 
+}
+
+
+  
+  /*creando el Footer - pie de pagina final de
+  la pagina*/
+  
+  .footer {
+    background-color:  #7aadcb;
+    color: #fff;
+    padding: 20px;
+  }
+  
+  .filas{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+  }
+  h3 {
+    color: #263878;
+    margin: 0;
+    font-family: "Bebas Neue";
+    text-align: center; /* Centrar el texto */
+}
+
+p {
+    margin-top: 10px;
+    font-family: "Bebas Neue";
+    text-align: center; 
+}
+
+h4 {
+    text-align: center; 
+    margin-top: 20px; 
+}
+
+.filas {
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    margin-bottom: 20px; 
+}
+
+.social-icons1 {
+    display: flex;
+    justify-content: center; 
+    margin-bottom: 4px; /
+}
+
+.social-icons {
+    list-style: none; 
+    display: flex;
+    gap: 15px; 
+}
+
+.social-icons li a {
+    font-size: 24px; 
+    color: #263878;
+}
+
+
+  /* Aquí puedes agregar tu CSS */
+  .social-icons {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    gap: 10px;
+}
+
+.social-icons li {
+    display: inline-block;
+}
+
+.social-icons a {
+    text-decoration: none;
+    color: #d5f0f4;
+    font-size: 24px;
+    transition: color 0.3s;
+}
+
+.social-icons a:hover {
+    color: #d4db40; /* Cambia esto según el color que desees para el hover */
+}
+  
+
+  
